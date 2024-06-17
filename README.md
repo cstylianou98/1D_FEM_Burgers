@@ -1,7 +1,7 @@
 # 1D Finite Element Method (FEM) Solver - Burgers Equation
 
 ## Description
-This project employs a one-dimensional Finite Element Method (FEM) solver in Python. It uses the Galerkin method with 1D Lagrange basis functions and 2nd order Gaussian Quadrature for numerical integration. The solver is capable of solving the Burgers equation using Classical Runge Kutta 4 methods for time-stepping whilst having the option of stabilizing the solution using Streamline Upwind (SU) and Streamline Upwind Petrov-Garlerkin (SUPG) techniques.
+This project employs a one-dimensional Finite Element Method (FEM) solver in Python. It uses the Galerkin method with 1D Lagrange basis functions and 2nd order Gaussian Quadrature for numerical integration. The solver is capable of solving the Burgers equation using Classical Runge Kutta 4 methods for time-stepping whilst having the option of stabilizing the solution using Streamline Upwind (SU) and Streamline Upwind Petrov-Galerkin (SUPG) techniques.
 
 This code has been part of my work at the Barcelona Supercomputer Centre (BSC) and aims to be useful for people starting their CFD journey using FEM solvers.
 
@@ -28,7 +28,7 @@ python main.py
 Follow the on-screen prompts to enter the last timestep and the preferred type of stabilization.
 
 ## Output
-The program computes and plots the numerical solution of the Burger Equation given initial and boundary conditions explained below.
+The program computes and plots the numerical solution of the Burgers Equation given initial and boundary conditions explained below.
 
 # Problem Statement
 
