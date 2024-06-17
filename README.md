@@ -30,7 +30,7 @@ Follow the on-screen prompts to enter the last timestep and the preferred type o
 ## Output
 The program computes and plots the numerical solution of the Burger Equation given initial and boundary conditions explained below.
 
-# Analysis
+# Problem Statement
 
 The code focuses on the solution of the Burgers Equation given by:
 
@@ -42,7 +42,7 @@ With initial condition given by:
 
 $$
 u(x, 0) = \begin{cases}
-    1 &  0 \leq x \leq 0.5 \\
+    1 &  0 \leq x \leq 0.64 \\
     1-\frac{(x-0.64)}{0.20} & 0.64 \leq x \leq 0.84 \\
     0 &  0.84 \leq x \leq 1
 \end{cases}
@@ -61,5 +61,5 @@ $$
 \Delta t = (Courant * h) / u_{max}
 $$
 
-With the Runge Kutta 4 method giving the following results as a gif showing the evolution of the solution with time up until t = 0.5s
+Sample results can be found in the "burgers_no_stabilization", "burgers_SU_stabilization" and "burgers_SUPG_stabilization" folders of this repository.
 
