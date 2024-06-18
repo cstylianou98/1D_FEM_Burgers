@@ -55,15 +55,18 @@ def setup_simulation(t_end, stabilization_choice):
 
     if stabilization_choice == 1:
         M = assemble_mass_matrix(numel, xnode, wpg, N_mef)
+        stabilization_graph_title = stabilization_graph_titles[0]
         folder_path = folder_paths[0]
         file_name = file_names[0]
 
     elif stabilization_choice == 2:
         M = assemble_mass_matrix(numel, xnode, wpg, N_mef)
+        stabilization_graph_title = stabilization_graph_titles[1]
         folder_path = folder_paths[1]
         file_name = file_names[1]
 
     elif stabilization_choice == 3:
+        stabilization_graph_title = stabilization_graph_titles[2]
         folder_path = folder_paths[2]
         file_name = file_names[2]
 
@@ -73,7 +76,7 @@ def setup_simulation(t_end, stabilization_choice):
     return {
         't_end': t_end,
         'stabilization_choice': stabilization_choice,
-        'stabilization_graph_title': stabilization_graph_titles[stabilization_choice - 1],
+        'stabilization_graph_title': stabilization_graph_title,
         'folder_path': folder_path,
         'file_name': file_name,
         'xnode': xnode,
